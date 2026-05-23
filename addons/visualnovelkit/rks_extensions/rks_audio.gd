@@ -45,7 +45,7 @@ func _on_custom_regex(key: String, result: RegExMatch):
 				return
 
 			# Rakugo.set_variable(node.name, "play:%f" % speed)
-			node.finished.connect( func(): # Rakugo.set_variable(node.name, "stop"))
+			node.finished.connect( func():  Rakugo.set_variable(node.name, "stop"))
 			node.play(speed)
 
 		SeekAudio:
